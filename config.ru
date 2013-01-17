@@ -11,7 +11,7 @@ require './lib/github.rb'
 require './lib/pebble.rb'
 
 use Rack::NoWWW
-use Rack::Static, :urls => [ "/font","/img", "/scripts","/css"], :root => "public"
+use Rack::Static, :urls => [ "/font","/img", "/scripts","/css","/apple-touch-icon.png"], :root => "public"
 
 map "/api" do
   run Huboard::API
